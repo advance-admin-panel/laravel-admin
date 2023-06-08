@@ -17,13 +17,13 @@ class UserSetupSeeder extends Seeder
      */
     public function run()
     {
-        Role::create([
-                'name' => 'Administrator',
-                'slug' => 'administrator',
-                'active' => 1,
-            ]);
+        Role::createMany([[
+            'name' => 'Administrator',
+            'slug' => 'administrator',
+            'active' => 1,
+        ]]);
 
-        $user = User::create([
+        $user = User::createMany([
             'uuid' => Str::uuid()->toString(),
             'username' => "jhonedue49",
             'first_name' => "Jhone",
