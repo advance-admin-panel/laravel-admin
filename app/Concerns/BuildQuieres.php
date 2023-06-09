@@ -4,7 +4,7 @@ namespace App\Concerns;
 
 use Illuminate\Database\Eloquent\Builder;
 
-trait BuildsQueries
+trait BuildQuieres
 {
     public function scopewithInactive(Builder $query)
     {
